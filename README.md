@@ -5,7 +5,7 @@ This is an experiment with an automated pipeline from short story text to video.
 ## Requirements
 
 - A Runway Developer account with sufficient credits.
-- Ollama, but other LLMs could also be used (needed for creation of storyboard scene descriptions).
+- LLM for creation of storyboard scene descriptions.
 
 ## Installation
 
@@ -32,7 +32,28 @@ flowchart TD
     E --> F[Combine all files to final video with ffmpeg]
 ```
 
-## Final Combination
+## Storyboard Generation
+
+For generating the storyboard from the short story text you 
+can use any capable LLM.
+
+There is an example prompt under `prompts/storyboard-prompt.txt`.
+
+## Image Generation
+
+Use `scene-to-image.mjs` to generate an image by entering each 
+individual scene dscription from the LLM.
+
+## Video Generation
+
+Use `image-to-video.mjs` to generate a short video from each 
+image of the previous step.
+
+## Text to Speech
+
+Use `text-to-speech.mjs` to generate the voiceover from the text.
+
+## Final Video
 
 Use ffmpeg to combine the separate files (video files and audio files)
 into final video.
