@@ -42,7 +42,7 @@ There is an example prompt under `prompts/storyboard-prompt.txt`.
 ## Image Generation
 
 Use `scene-to-image.mjs` to generate an image by entering each 
-individual scene dscription from the LLM.
+individual scene description from the LLM.
 
 ## Video Generation
 
