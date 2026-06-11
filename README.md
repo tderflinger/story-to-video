@@ -1,6 +1,6 @@
 # story-to-video
 
-This is an experiment with an automated pipeline from short story text to video. This project was created during the Runway Hackathon 2026.
+This is an experiment with an automated pipeline from short story text to video. This project was created during the Runway Hackathon 2026. For taking part in the Hackathon, Runway provided me with free credits.
 
 ## Requirements
 
